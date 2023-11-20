@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F5F5F5"
     tools:context="com.example.catatankufloatingroom.PostActivity">
 
     <TextView
@@ -13,35 +15,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post"
-        android:textSize="24dp"
-        android:layout_margin="24dp"
-        />
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp" />
 
     <EditText
         android:id="@+id/txt_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Title"/>
+        android:hint="Title"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
 
     <EditText
         android:id="@+id/txt_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"/>
+        android:hint="Description"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
 
     <EditText
         android:id="@+id/txt_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Date"/>
+        android:hint="Date"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btn_post"
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"/>
-
-
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="#4CAF50"
+        android:layout_marginTop="16dp"
+        />
 
 </LinearLayout>

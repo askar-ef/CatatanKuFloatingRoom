@@ -46,8 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun getAllNotes() {
-        mNoteDao.allNotes.observe(this) { notes ->
-            val adapter: ArrayAdapter<Note> =
+        mNoteDao.allNotes.observe(this) { notes -> val adapter: ArrayAdapter<Note> =
                 ArrayAdapter<Note>(this, android.R.layout.simple_list_item_1, notes)
             binding.lvName.adapter = adapter
         }
